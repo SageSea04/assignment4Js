@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pizza Maker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>The Pizza Maker</h1>
+        <p id="student-info"></p> <!-- Student ID and name will be added -->
+    </header>
+
+    <main>
+        <form id="pizza-form">
+            <!-- Pizza Sizes-->
+            <label for="size">Choose Pizza Size:</label>
+            <select id="size" required>
+                <option value="Small">Small 10"</option>
+                <option value="Medium">Medium 13"</option>
+                <option value="Large">Large 15"</option>
+            </select>
+
+            <!-- Crust Options-->
+            <label for="crust">Choose Crust Type:</label>
+            <select id="crust" required>
+                <option value="Thin">Thin</option>
+                <option value="Thick">Thick</option>
+                <option value="Stuffed">Stuffed</option>
+            </select>
+
+            <!-- Pizza Toppings-->
+            <fieldset>
+                <legend>Choose Pizza Toppings:</legend>
+                <label><input type="checkbox" value="Pepperoni"> Pepperoni</label>
+                <label><input type="checkbox" value="Bacon"> Bacon</label>
+                <label><input type="checkbox" value="Grilled Chicken"> Grilled Chicken</label>
+                <label><input type="checkbox" value="Mushrooms"> Mushrooms</label>
+                <label><input type="checkbox" value="Olives"> Olives</label>
+                <label><input type="checkbox" value="Onions"> Onions</label>
+                <label><input type="checkbox" value="Green Peppers"> Green Peppers</label>
+            </fieldset>
+
+            <label for="extra-cheese">
+                <input type="checkbox" id="extra-cheese" value="Extra Cheese"> Extra Cheese??<br> 
+            </label>            
+
+            <label for="special-instructions">Special Instructions:</label>
+            <textarea id="special-instructions" rows="3"></textarea>
+
+            <button type="submit">Order</button>
+        </form>
+
+        <div id="order-summary"></div> <!-- Order details will be displayed here -->
+    </main>
+
+</body>
+</html>

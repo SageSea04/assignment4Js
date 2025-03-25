@@ -35,8 +35,8 @@ form select, form textarea, form input[type="checkbox"] {
  label {
     display: flex;
     align-items: center;
-    gap: 8px; /* Adjust spacing between checkbox and text */
-    margin-bottom: 5px; /* Add spacing between each option */
+    gap: 8px; 
+    margin-bottom: 5px; 
 }
 
 
